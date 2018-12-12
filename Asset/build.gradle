@@ -8,34 +8,24 @@ apply plugin: 'eclipse'
  
 
 jar {
-
     manifest {
-
         attributes 'Main-Class': 'StartClass'
-
     }
-
 }
 
  
 
 eclipse {
-
     classpath {
-
         file {
-
             whenMerged {
-
                 def jre = entries.find { it.path.contains 'org.eclipse.jdt.launching.JRE_CONTAINER' }
-
                 jre.accessRules.add(new AccessRule('0', 'javafx/**'))
-
             }
-
         }
-
     }
+
+
 
 
 }
@@ -43,12 +33,10 @@ eclipse {
  
 
 repositories {
-
     jcenter()
-
 }
 
 dependencies {
-
+compile 'org.dizitart:nitrite:1.0'
 }
 
