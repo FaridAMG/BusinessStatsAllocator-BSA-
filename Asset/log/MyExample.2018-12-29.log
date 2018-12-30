@@ -1,0 +1,1 @@
+19:10:26.544 [Thread-4] INFO  org.dizitart.no2.Nitrite - Nitrite database has been closed by JVM shutdown hook without saving last unsaved changes.
